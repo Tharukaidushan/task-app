@@ -1,9 +1,16 @@
-import { Task } from "./Task"
+import { Task } from "./Task";
 
-export const Tasks = ({tasks, onDelete, togleReminder}) => {
+export const Tasks = ({ tasks, onDelete, togleReminder }) => {
   return (
-    <>{tasks.map((task) => 
-        (<Task tasks={tasks} task={task} onDelete={onDelete} togleReminder={togleReminder}/>
-    ))}</>
-  )
-}
+    <>
+      {tasks.map((task) => (
+        <Task
+          tasks={tasks}
+          task={task}
+          onDelete={onDelete}
+          togleReminder={togleReminder}
+        />
+      ))}
+    </>
+  );
+};

@@ -1,16 +1,18 @@
-import React from 'react'
+import React from "react";
 
-export const Button = ({color, btnTxt, onClick}) => {
+export const Button = ({ color, btnTxt, onClick }) => {
   return (
-    <button 
-    onClick={onClick}
-    className="btn" 
-    style={{ backgroundColor: color }}>{btnTxt}</button>
-  )
-}
-
+    <button
+      onClick={onClick}
+      className="btn"
+      style={{ backgroundColor: color }}
+    >
+      {btnTxt}
+    </button>
+  );
+};
 
 Button.defaultProps = {
-    color: 'steelblue',
-    btnTxt: 'Button',
-}
+  color: "steelblue",
+  btnTxt: "Button",
+};
